@@ -12,13 +12,20 @@ import { truncateEthAddress } from "../utils/truncAddress";
 const mainURL = `https://arweave.net/`;
 
 const CompanyProfile = () => {
+
   const [nfts, setNts] = useState([]);
+  const [companynfts, setCompanyNts] = useState([]);
   const [loading, setLoading] = useState(false);
+
+  const [addr, setAddr] = useState("");
 
   const router = useRouter();
 
   useEffect(() => {
     getNfts();
+    getCompanyNfts();
+    const addr = localStorage.getItem("walletAddress");
+    setAddr(addr);
   }, []);
 
   const getContract = async () => {
@@ -48,6 +55,8 @@ const CompanyProfile = () => {
 
           let price = ethers.utils.formatUnits(i.price.toString(), "ether");
 
+          console.log(i.owner)
+
           let item = {
             price,
             tokenId: i.tokenId.toNumber(),
@@ -68,6 +77,23 @@ const CompanyProfile = () => {
       toast.error("Something went wrong", error);
     }
   };
+
+  const getCompanyNfts = async () => {
+    try{
+        const companynft = []
+        nfts.forEach((nft) => {
+            if(nft.seller == addr){
+                companynft.push(nft)
+            }
+        })
+        setCompanyNts(companynft);
+        console.log(companynfts);
+    }
+    catch (error){
+        console.error(error);
+        toast.error("Something went wrong", error);
+    }
+  }
 
 
 
