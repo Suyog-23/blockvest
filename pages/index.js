@@ -53,12 +53,12 @@ export default function Home() {
         <section className="max-w-[1240px] my-20 mx-auto grid grid-cols-2  gap-2 font-body h-[540px] overflow-hidden top-7 md:gap-12 medium md:px-5 sm:grid-cols-1 sm:h-full relative ">
           <div className="flex flex-col items-start justify-center h-full sm:items-center">
             <h1 className="w-full text-4xl sm:text-center">
-              Discover New Era of <br /> Crypto Currencies
+              Welcome to Blockvest
             </h1>
             <p className="text-[#ADB9C7] sm:text-center">
-              Kittos is the primier marketplace for NFT, which are digital items
-              you can truly own. Digital items have existed for a long time, but
-              never like this.
+            Blockvest is your DAO's personal investing management tool. Here you can deploy your own NFTs and allow investors to be a part of your journey! NO worrying about long VC cycles and terms when you can show growth and performance.
+
+
             </p>
             {/* {addr ? (
               <button
