@@ -67,6 +67,25 @@ const Header = () => {
                 </a>
               </Link>
             </li>
+
+            {/* {
+              addr=="0x55a2FA3D7F7f76Ff163BC7E613e0748A2e934825"? 
+              <li>
+              <Link href="/createnft">
+                <a
+                  className={
+                    currentRoute === "/createnft"
+                      ? "text-white text-base font-medium"
+                      : "text-gray-500 font-normal hover:text-white"
+                  }
+                >
+                  Create NFTs
+                </a>
+              </Link>
+            </li> 
+            : <></>
+            } */}
+            
             <li>
               <Link href="/createnft">
                 <a
@@ -79,7 +98,9 @@ const Header = () => {
                   Create NFTs
                 </a>
               </Link>
-            </li>
+            </li> 
+
+            
             <li>
               <Link href="/profile">
                 <a
@@ -94,15 +115,15 @@ const Header = () => {
               </Link>
             </li>
             <li>
-              <Link href="/companyprofile">
+              <Link href="/yourstats">
                 <a
                   className={
-                    currentRoute === "/companyprofile"
+                    currentRoute === "/yourstats"
                       ? "text-white text-base font-medium"
                       : "text-gray-500 font-normal hover:text-white"
                   }
                 >
-                  CompanyProfile
+                  Company and Personal stats
                 </a>
               </Link>
             </li>
@@ -135,7 +156,7 @@ const Header = () => {
 
           <h2 className="text-2xl ">
             <Link href="/">
-              <a>Kittos</a>
+              <a>Blockvest</a>
             </Link>
           </h2>
           <ul className="grid gap-3 grid-rows-3 items-center justify-center transition-all list-none nav_links text-lg">
@@ -175,6 +196,19 @@ const Header = () => {
                   }
                 >
                   Profile
+                </a>
+              </Link>
+            </li>
+            <li>
+              <Link href="/yourstats">
+                <a
+                  className={
+                    currentRoute === "/yourstats"
+                      ? "text-white text-base font-medium"
+                      : "text-gray-500 font-normal hover:text-white"
+                  }
+                >
+                  Company and Personal stats
                 </a>
               </Link>
             </li>

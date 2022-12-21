@@ -7,37 +7,15 @@ const Footer = () => {
         <div className="grid footer justify-between gap-[88px] md:grid-cols-2 md:gap-6 ">
           <div className="col-span-1">
             <div className="flex items-center justify-start gap-1">
-              {/* <img src="logo.png" alt="logo" className="w-[40px] h-[40px]" /> */}
               <h4 className="">Blockvest</h4>
             </div>
             <p className="text-lg text-[#ADB9C7]">
-              The world’s first and largest digital marketplace for crypto
-              collectibles and non-fungible tokens (NFTs). Buy, sell, and
-              discover exclusive digital items.
+              Blockvest is your DAO's personal investing management tool. Here you can deploy your own NFTs and
+              allow investors to be a part of your journey! NO worrying about long VC cycles and terms when you can
+              show growth and performance.
             </p>
           </div>
-          <div>
-            <h3 className="title">Resources</h3>
-            <p className="desc">Help Center</p>
-            <p className="desc">Platform Status</p>
-            <p className="desc">Partners</p>
-            <p className="desc">Gas-Free Marketplace</p>
-            <p className="desc">Blog</p>
-          </div>
-          <div>
-            <h3 className="title">Company</h3>
-            <p className="desc">Our Team</p>
-            <p className="desc">About Us</p>
-            <p className="desc">Partners</p>
-            <p className="desc">Contact Us</p>
-            <p className="desc">Career</p>
-          </div>
-          <div>
-            <h3 className="title">Contact</h3>
-            <p className="desc">
-              2715 Ash Dr. San Jose, <br /> South Dakota 83475
-            </p>
-          </div>
+
         </div>
         <div>
           <h3>{new Date().getFullYear()} All Right Reserved</h3>
@@ -45,7 +23,7 @@ const Footer = () => {
             Designed and Developed By{" "}
             <span className="text-transparent font-bold bg-clip-text bg-gradient-to-r from-sky-500 to-blue-600">
               {" "}
-              Aakrut Dabhi{" "}
+              Team EDAI Group 16{" "}
             </span>
           </p>
         </div>

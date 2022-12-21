@@ -76,8 +76,8 @@ const Dashboard = () => {
     <div className="relative ">
       {" "}
       <Head>
-        <title>Dashboard || Kittos</title>
-        <link rel="shortcut icon" href="logo.png" />
+        <title>Dashboard || Blockvest</title>
+        {/* <link rel="shortcut icon" href="logo.png" /> */}
       </Head>
       <Header />
       <div className="bg-[#1242ef] absolute left-[-250px] top-[-210px] h-[352px] w-[652px] blur-[350px] rounded-full "></div>
@@ -87,7 +87,7 @@ const Dashboard = () => {
         </div>
       ) : (
         <div className="relative overflow-hidden">
-          <h1 className="text-center">Hot NFTs</h1>
+          <h1 className="text-center pt-4">Blockvest  Investment Opportunities</h1>
           <section className="max-w-[1200px] my-20 mx-auto grid grid-cols-3 md:grid-cols-2 gap-4 font-body  overflow-hidden top-7 md:gap-5 medium md:px-5 sm:grid-cols-1 sm:h-full relative justify-center items-center ">
             {nfts?.map((nft, i) => (
               <div key={i} className="w-full h-[536px] sm:h-full ssm:h-max">

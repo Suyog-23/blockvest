@@ -74,7 +74,7 @@ const Profile = () => {
   return (
     <div className="relative  ">
       <Head>
-        <title> My Profile || Kittos </title>
+        <title> My Profile</title>
         {/* <link rel="shortcut icon" href="logo.png" /> */}
       </Head>
       <Header />
@@ -91,11 +91,7 @@ const Profile = () => {
             </div>
 
             <div className="absolute w-[160px] h-[160px] sm:w-[80px] sm:h-[80px] bg-white left-10 -bottom-[80px] rounded-[45px] sm:rounded-3xl profile flex  sm:-bottom-[40px] items-center justify-center">
-              <img
-                src="logo.png"
-                alt="Logo"
-                className="w-[80px] h-[80px] sm:h-[60px] sm:w-[60px]"
-              />
+              
             </div>
           </div>
         </section>
