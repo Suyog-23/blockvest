@@ -44,7 +44,7 @@ export default function Home() {
         {/* <link rel="shortcut icon" href="logo.png" /> */}
       </Head>
 
-      <div className="bg-[#1242ef] absolute left-[-250px] top-[-210px] h-[352px] w-[652px] blur-[350px] rounded-full "></div>
+      <div className="font-Oxygen bg-[#1242ef] absolute left-[-250px] top-[-210px] h-[352px] w-[652px] blur-[350px] rounded-full "></div>
 
       {isWalletConnected ||  addr ? <Header /> : null}
 

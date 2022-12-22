@@ -160,8 +160,7 @@ const Create = () => {
   return (
     <div className="font-body">
       <Head>
-        <title>Create NFT || Kittos </title>
-        <link rel="shortcut icon" href="logo.png" />
+        <title>Create NFT</title>
       </Head>
 
       <Header />
